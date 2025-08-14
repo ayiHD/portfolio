@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Update Google Fonts to HTTPS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Hiya Das | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Use relative paths for local assets -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -33,7 +35,8 @@
   <section id="about">
     <h2>About Me</h2>
     <div class="about-container">
-      <img src="myphoto.jpg" alt="My Photo" class="profile-pic">
+      <!-- Update image paths to use relative paths -->
+      <img src="./myphoto.jpg" alt="My Photo" class="profile-pic">
       <p>
         I am a B.Tech IT student passionate about web development. Skilled in HTML, CSS, JavaScript and currently learning MERN stack. I enjoy building creative, user-friendly web projects that solve real problems.
       </p>
@@ -54,26 +57,30 @@
   <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project"><a href="https://ayihd.github.io/portfolio/" target="_blank" class="project-card"> 
+    <div class="project"><a href="https://ayihd.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="project-card"> 
       <h3>Portfolio Website</h3>
       <p>Responsive personal portfolio showcasing my skills and projects.</p></a>
     </div>
-    <div class="project"><a href="https://ayihd.github.io/amazon/" target="_blank" class="project-card">
+    <div class="project"><a href="https://ayihd.github.io/amazon/" target="_blank" rel="noopener noreferrer" class="project-card">
       <h3>Amazon clone</h3>
       <p>Responsive clone of the Amazon website built with HTML, CSS.</p></a>
     </div>
-    <div class="project"><a href="https://ayihd.github.io/weather/" target="_blank" class="project-card">
-      <h3>Weather App</h3>
-      <p>API-based weather application to display real-time weather info.</p>
-    </div>
+    <div class="project">
+    <a href="https://ayihd.github.io/weather/" target="_blank" rel="noopener noreferrer" class="project-card">
+        <h3>Weather App</h3>
+        <p>API-based weather application to display real-time weather info.</p>
+    </a>
+</div>
   </section>
 
   <!-- Contact -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="hiyad7846@gmail.com">hiyad7846@gmail.com</a></p>
+    <div class="contact-box">
+    <p>Email: <a href="mailto:hiyad7846@gmail.com">hiyad7846@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/hiya-das-04bb6a2a3">www.linkedin.com/in/hiya-das-04bb6a2a3</a></p>
     <p>GitHub: <a href="https://github.com/ayiHD">github.com/ayiHD</a></p>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -81,6 +88,7 @@
     <p>© <span id="year"></span> Hiya Das. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Use relative path for local scripts -->
+  <script src="./script.js"></script>
 </body>
 </html>

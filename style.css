@@ -136,18 +136,27 @@ h2 {
 /* Contact Section */
 #contact {
     text-align: center;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-#contact a {
-    color: #007bff;
+.contact-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.contact-box a {
+    color: #333;
     text-decoration: none;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+.contact-box a:hover {
+    color: #007bff;
+}
+
+#contact h2 {
+    cursor: text;
 }
 
 /* Footer */
